@@ -3,8 +3,6 @@
 venv/
 env/
 
-# Environment variable files
-.env
 
 # Python
 __pycache__/
@@ -37,3 +35,12 @@ wheels/
 # OS
 .DS_Store
 Thumbs.db
+
+# Secrets
+secrets.py
+credentials.json
+credentials.txt
+*.key
+*.pem
+*.crt
+*.cert
