@@ -34,12 +34,26 @@ Product Catalog Agent (Remote - port 8002)
 
 ## Setup
 
-1. **Install Dependencies**:
+1. **Create and Activate Virtual Environment**:
    ```bash
-   pip install google-adk
+   # Create a virtual environment
+   python -m venv venv
+
+   # Activate the virtual environment
+   # On Linux/Mac:
+   source venv/bin/activate
+   # On Windows:
+   venv\Scripts\activate
    ```
 
-2. **Set up Environment Variables**:
+2. **Install Dependencies**:
+   ```bash
+   pip install -r ../requirements.txt
+   # or install directly:
+   pip install google-adk python-dotenv uvicorn fastapi
+   ```
+
+3. **Set up Environment Variables**:
    Create a `.env` file in the project root with your Google API configuration:
    ```env
    GOOGLE_API_KEY=your_api_key_here
